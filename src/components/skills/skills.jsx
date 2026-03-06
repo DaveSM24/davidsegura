@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   const [selectedTech, setSelectedTech] = useState(null);
@@ -224,7 +225,13 @@ export default function Skills() {
 
   return (
     <section id="skills" className="pt-20 max-w-5xl mx-auto px-4 text-start">
-      <div className="max-w-5xl mx-auto px-4 mt-12 relative">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="max-w-5xl mx-auto px-4 mt-12 relative"
+      >
         <div className="absolute -top-3 md:-top-8 text-mars/20 text-5xl md:text-7xl font-bold font-nasalization select-none">
           SKILLS
         </div>
@@ -236,8 +243,14 @@ export default function Skills() {
             <span className="block w-14 h-1 bg-mars rounded-full mt-1"></span>
           </h2>
         </div>
-      </div>
-      <div className="hidden lg:block">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="hidden lg:block"
+      >
         <div className={`banner ${isStopped ? "paused" : ""}`}>
           <div
             className={`slider ${isStopped ? "stopped" : ""}`}
@@ -258,13 +271,13 @@ export default function Skills() {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
       {/* Mobile + Tablet */}
       <div className="lg:hidden px-6 py-16">
         <div className="grid grid-cols-3 sm:grid-cols-4 gap-12 place-items-center mb-12">
           {logos.map((tech, i) => (
             <button
-            arial-label={`Ver información sobre ${tech}`}
+              arial-label={`Ver información sobre ${tech}`}
               name={`btn-tech-${tech}`}
               key={i}
               onClick={() => setSelectedTech(tech)}

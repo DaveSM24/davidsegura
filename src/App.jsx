@@ -1,10 +1,17 @@
+import { lazy, Suspense } from "react"
+
 import Navbar from "./components/navbar/navbar.jsx";
 import NavbarTop from "./components/navbar/navbartop.jsx";
-import Hero from "./components/hero/hero.jsx";
-import About from "./components/about/about.jsx";
-import Contact from "./components/contact/contact.jsx";
-import Skills from "./components/skills/skills.jsx";
+import Hero from "./components/hero/hero.jsx"
+const About = lazy(() => import("./components/about/about.jsx"))
+const Contact = lazy(() => import("./components/contact/contact.jsx"))
+const Skills = lazy(() => import("./components/skills/skills.jsx"))
+
 import ParticlesBackground from "./components/ParticlesBackground";
+
+
+
+
 
 export default function App() {
   return (
@@ -45,10 +52,13 @@ export default function App() {
         <NavbarTop />
         <Navbar />
         <main>
-          <Hero />
-          <About />
-          <Skills />
-          <Contact />
+            <Hero />
+          <Suspense fallback={<div className="py-20">Loading...</div>}>
+            <About />          
+            <Skills />          
+            <Contact />
+          </Suspense>
+          
         </main>
       </ParticlesBackground>
     </div>
