@@ -237,7 +237,7 @@ export default function Skills() {
         </div>
 
         {/* Cabecera */}
-        <div className="flex items-center gap-6 ">
+        <div className="hidden lg:flex items-center gap-6 ">
           <h2 className="text-4xl font-extrabold text-mars relative tracking-wider">
             Skills
             <span className="block w-14 h-1 bg-mars rounded-full mt-1"></span>
