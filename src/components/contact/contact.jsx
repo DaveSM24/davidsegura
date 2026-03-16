@@ -29,7 +29,7 @@ export default function Contact() {
         {/* CONTENEDOR */}
         <div className="flex flex-col md:flex-row items-start gap-10">
           <div className="w-full md:w-2/4 flex flex-col items-start gap-3 mt-10">
-            {/* TEXTO */}
+            {/* PARTE DEL TEXTO */}
             <p className="mb-6 text-start text-balance text-lg w-full align-middle text-dark-bg-secondary dark:text-light-bg-secondary">
               ¿Quieres colaborar o tienes alguna propuesta? <br />
               Para cualquier consulta, no dudes en enviarme un mensaje a través
@@ -60,6 +60,7 @@ export default function Contact() {
           </div>
           {/* FORMULARIO */}
           <div className="w-full md:w-2/3">
+            {/* Mensaje de éxito */}
             {state.succeeded ? (
               <div
                 className="

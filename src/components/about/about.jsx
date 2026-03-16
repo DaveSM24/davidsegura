@@ -16,7 +16,7 @@ export default function About() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Tarjeta futurista con parallax */}
+          {/* Tarjeta futurista con parallax al hacer hover */}
           <div className="relative">
             <div
               className="
@@ -29,7 +29,6 @@ export default function About() {
             dark:hover:shadow-[0_0_60px_rgba(255,30,50,0.55)]
           "
             >
-              {/* Frase inspiradora */}
               <p className="text-sm uppercase tracking-widest text-mars/70 dark:text-mars/60 mb-2">
                 “Siempre avanzando, línea a línea.”
               </p>
@@ -58,6 +57,7 @@ export default function About() {
             </div>
           </div>
 
+          {/* Imagen chibi con parte de abajo difuminada */}
           <div className="relative group flex justify-center">
             <img
               src="/img/david-chibi.webp" loading="lazy"
