@@ -9,7 +9,7 @@ export default function ScrollIndicator() {
         <div className="w-[6px] h-[6px] bg-gray-400 rounded-full absolute top-2 animate-scroll-bezier" />
       </div>
 
-      {/* Texto “Scroll Down” con leve animación */}
+      {/* Texto Scroll Down con leve animación */}
       <p className="dark:text-gray-400 text-sm mt-3 animate-pulse tracking-wide">
         Scroll Down
       </p>

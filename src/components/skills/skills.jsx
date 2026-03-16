@@ -232,12 +232,12 @@ export default function Skills() {
         viewport={{ once: true }}
         className="max-w-5xl mx-auto px-4 mt-12 relative"
       >
-        <div className="absolute -top-3 md:-top-8 text-mars/20 text-5xl md:text-7xl font-bold font-nasalization select-none">
+        <div className="hidden lg:block absolute -top-3 md:-top-8 text-mars/20 text-5xl md:text-7xl font-bold font-nasalization select-none">
           SKILLS
         </div>
 
         {/* Cabecera */}
-        <div className="hidden lg:flex items-center gap-6 ">
+        <div className="flex items-center gap-6 ">
           <h2 className="text-4xl font-extrabold text-mars relative tracking-wider">
             Skills
             <span className="block w-14 h-1 bg-mars rounded-full mt-1"></span>

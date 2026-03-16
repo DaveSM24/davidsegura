@@ -14,12 +14,12 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20">
       <div className="max-w-5xl mx-auto px-4 mt-20 relative">
-        <div className="absolute -top-3 md:-top-8 text-mars/20 text-5xl md:text-7xl font-bold font-nasalization select-none">
+        <div className="hidden lg:block absolute -top-3 md:-top-8 text-mars/20 text-5xl md:text-7xl font-bold font-nasalization select-none">
           CONTACTO
         </div>
 
         {/* Cabecera */}
-        <div className="hidden lg:flex items-center gap-6 mb-12">
+        <div className="flex items-center gap-6 mb-12">
           <h2 className="text-4xl font-extrabold text-mars relative tracking-wider">
             Contacto
             <span className="block w-14 h-1 bg-mars rounded-full mt-1"></span>
