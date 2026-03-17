@@ -16,7 +16,7 @@ export default function Hero() {
         alt="imagen-david"
         className="glitch-img w-48 h-48 rounded-3xl object-cover mb-7"
       />
-      <h1 className="text-5xl font-bold mb-4">David Segura</h1>
+      <h1 className="text-5xl font-bold mb-4">hola</h1>
       <h2 className="text-2xl text-black-300 mb-4">Desarrollador web</h2>
 
       <div className="social flex">

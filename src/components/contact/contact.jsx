@@ -130,7 +130,8 @@ export default function Contact() {
                         bg-light-bg/20 dark:bg-dark-bg/30
                         peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-base
                         peer-focus:-top-5 peer-focus:text-sm peer-focus:text-mars
-                        peer-not-placeholder-shown:-top-3 peer-not-placeholder-shown:text-sm
+                        peer-valid:-top-5 peer-valid:text-sm 
+                        peer-not-placeholder-shown:-top-5 peer-not-placeholder-shown:text-sm
                       "
                     >
                       Correo electrónico
@@ -168,6 +169,7 @@ export default function Contact() {
                         bg-light-bg/20 dark:bg-dark-bg/30
                         peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-base
                         peer-focus:-top-5 peer-focus:text-sm peer-focus:text-mars
+                        peer-valid:-top-5 peer-valid:text-sm
                         peer-not-placeholder-shown:-top-3 peer-not-placeholder-shown:text-sm
                       "
                   >
@@ -201,7 +203,8 @@ export default function Contact() {
                       bg-light-bg/20 dark:bg-dark-bg/30
                       peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-base
                       peer-focus:-top-5 peer-focus:text-sm peer-focus:text-mars
-                      peer-not-placeholder-shown:-top-3 peer-not-placeholder-shown:text-sm"
+                      peer-not-placeholder-shown:-top-3 peer-not-placeholder-shown:text-sm
+                      peer-valid:-top-5 peer-valid:text-sm"
                   >
                     Mensaje
                   </label>

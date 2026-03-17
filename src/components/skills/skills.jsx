@@ -262,7 +262,7 @@ export default function Skills() {
             {logos.map((tech, i) => (
               <div
                 key={i}
-                className={`item ${selectedTech === tech ? "selected" : ""}`}
+                className={`cursor-pointer item ${selectedTech === tech ? "selected" : ""}`}
                 onClick={() => handleClick(tech)}
                 style={{ "--position": i + 1 }}
               >
